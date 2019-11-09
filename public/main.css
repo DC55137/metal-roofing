@@ -1,0 +1,195 @@
+body{
+	color: #01539a;
+	transition-delay: 2s;
+/*	background-image: url(roof6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+div{
+	transition-delay: 2s;
+}
+h2{
+	font-size: 4.0em;
+}
+
+hr{
+	border-top: 3px solid #01539a;
+	opacity: 0.8;
+}
+i{
+	border: #01539a solid 3px;
+	border-radius: 50%;
+	font-size: 4.0em;
+	padding: 20px;
+}
+i:hover{
+	background-color: #01539a;
+	color: white;
+}
+h3{
+	font-size: 2.5em;
+}
+
+.ultimate{
+	margin-top: 95px;
+	background-color: white;
+}
+
+.ultimateAbout{
+	background-color: #01539a;
+	color: white;
+}
+.ultimateGallery{
+	margin-top: 95px;
+	background-color: #01539a;
+	color: white;
+	height: 100vh;
+}
+.ultimateSouthport{
+	margin-top: 95px;
+	background-color: #01539a;
+	color: white;
+}
+.galleryDiv{
+	float: left;
+	text-align: center;
+}
+
+.galleryImage{
+	width: 90%;
+	margin: 5%
+}
+
+.galleryImage:hover{
+	opacity: 0.6;
+}
+
+.aboutBlur{
+	padding-top: 10%;
+}
+ .middle{
+ 	text-align: center;
+ 	text-transform: uppercase;
+ }
+
+ .middle p{
+ 	text-transform: none;
+ }
+
+ .strip p{
+ 	font-size: 1.2em;
+ }
+.nav-item{
+	text-transform: Uppercase;
+}
+
+#aboutImg{
+	margin-top: 10%;
+	width: 100%;
+
+}
+#transition{
+	transition-duration: 2s;
+}
+
+#description{
+	text-align: center;
+	font-size: 1.5em;
+}
+.navbar-light{
+	opacity: 0.99;
+}
+
+#number{
+	font-weight: 700;
+	color: #01539a;
+	size: 3em;
+}
+
+
+#carouselExampleInterval{
+	border: #01539a solid 3px;
+	border-bottom: none;
+	transition-duration: 2s;
+}
+
+.carousel-item {
+  transition-duration: 2s;
+}
+#logo{
+	width: 150px;
+}
+.w-100{
+	height: 450px;
+}
+
+#logo-home{
+	height: 250px;
+}
+
+.logo-home-div{
+	text-align: center;
+	margin: -40px auto 0 auto;
+}
+.text-div-main{
+	margin:5% 0;
+}
+
+.text-div{
+	text-align: center;
+	margin: 2% auto;
+}
+
+.strip{
+	background-image: url("roof1.jpg");
+	background-size: cover;
+	margin-top: 5%;
+}
+
+.stripFront{
+	background-color: #01539a;
+	width: 100%;
+	color: white;
+	opacity: 0.9;
+
+
+}
+
+.triangle{
+	/*clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0% 100%, 0 46%, 0% 0%);*/
+	clip-path: polygon(50% 0%, 100% 0, 100% 100%, 66% 90%, 33% 90%, 0 100%, 0 0);
+}
+
+.footer{
+	background: #c2ccd5;
+	width: 100%;
+	text-align: center;
+}
+
+.message{
+	text-align: center;
+}
+
+#display{
+	margin: 5px;
+	width: 300px;
+}
+
+#displayDiv{
+	text-align: center;
+}
+
+.strip-container{
+	padding: 30px;
+
+}
+
+.style-one {
+    border: 0;
+    height: 2px;
+    background: #01539a;
+}
+
+.footerP{
+	margin: 0;
+}
