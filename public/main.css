@@ -85,9 +85,9 @@ h3{
 	text-transform: Uppercase;
 }
 
-#aboutImg{
-	margin-top: 10%;
-	width: 100%;
+.aboutImg{
+	height: 100vh;
+	background-image: url("img1.png");
 
 }
 #transition{
