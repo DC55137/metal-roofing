@@ -1,0 +1,18 @@
+.ultimateAbout{
+	background-color: #01539a;
+    color: white;
+    margin-top: 95px;
+	background-color: #01539a;
+	color: white;
+}
+
+.row-about{
+	height: calc(100vh- 10px);;
+}
+
+.aboutImg{
+	height: 100vh;
+	background-image: url("carousel7.jpg");
+	overflow: hidden;
+	object-fit: cover;
+}

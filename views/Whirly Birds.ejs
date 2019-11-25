@@ -5,13 +5,13 @@
 	<script src="https://kit.fontawesome.com/1c59f0b14b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="gallery.css">
-	<title>Chris's Gallery Page</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<title>Chris's About Page</title>
 </head>
 <body>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 				<div class="container">
-					<a href="/" class="navbar-brand"><img src="/logo.png" id="logo"></a>
+					<a href="/" class="navbar-brand"><img src="logo.png" id="logo"></a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -21,11 +21,11 @@
 								<a href="/" class="nav-link">Home</a>
 							</li>
 							
-							<li class="nav-item active">
-								<a href="/Gallery" class="nav-link">Gallery</a>
+							<li class="nav-item">
+								<a href="Gallery" class="nav-link">Gallery</a>
 							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="/Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle" href="Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Services
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -36,7 +36,7 @@
 								</div>
 								</li>
 							<li class="nav-item">
-								<a href="/About" class="nav-link">About</a>
+								<a href="About" class="nav-link">About</a>
 							</li>
 							<li class="nav-item">
 								<a href="/quote" class="nav-link ">Get a Quote</a>
@@ -51,39 +51,52 @@
 					</div>
 				</div>
 			</nav>
-<main>
-	<div class="container">
-		<div class="galleryDiv row">
-			<div class="col-4">
-				<a href="Gallery/Southport">
-					<img class="galleryImage" src="Southport/img10.jpg">
-				</a>
-				<p>Southport Project</p>
+
+<div class="ultimateAbout">
+		<div class="row row-about">
+			<div class="col-6 aboutImg">
 			</div>
-			<div class="col-4">
-				<a href="Gallery/Coombabah">
-					<img class="galleryImage" src="Coombabah/img1.jpg">
-				</a>
-				<p>Coombabah Project</p>
+			<div class="col-6 aboutBlur">
+				<h1>Gutters and Fascia</h1>
+				<p>
+					<strong>Gutter</strong> , eavestrough or surface water collection channel is a component of a 
+					water discharge system for a building.[1] It is necessary to prevent water dripping 
+					or flowing off roofs in an uncontrolled manner for several reasons: to prevent it 
+					damaging the walls, drenching persons standing below or entering the building, and 
+					to direct the water to a suitable disposal site where it will not damage the foundations 
+					of the building. In the case of a flat roof, removal of water is clearly essential to 
+					prevent water ingress and to prevent a build-up of excessive weight.
+					Water from a pitched roof flows down into a valley gutter, a parapet gutter or an eaves 
+					gutter. An eaves gutter is also known as an eavestrough (especially in Canada), rhone 
+					(Scotland)[2], eaves channel, dripster, guttering, rainspouting or simply as a gutter.
+					 The word gutter derives from Latin gutta (noun), meaning "a droplet".[4]
+					Guttering in its earliest form consisted of lined wooden or stone troughs. Lead was a popular 
+					liner and is still used in pitched valley gutters. Many materials have been used to make 
+					guttering: cast iron, asbestos cement, UPVC (PVCu), cast and extruded aluminium, 
+					galvanized steel, wood, copper, zinc, and bamboo.
+				</p>
+				<p>
+					<strong>Fascia</strong>  is an architectural term for a vertical frieze or band under a roof edge, 
+					or which forms the outer surface of a cornice, visible to an observer.
+					Typically consisting of a wooden board, uPVC or non-corrosive sheet metal, many of the non-domestic 
+					fascias made of stone form an ornately carved or pieced together cornice in which case the term fascia 
+					is rarely used.
+					The word fascia derives from Latin "fascia" meaning "band, bandage, ribbon, swathe". The term is also 
+					used, although less commonly, for other such band-like surfaces like a wide, flat trim strip around a 
+					doorway, different and separate from the wall surface.
+					The horizontal "fascia board" which caps the end of rafters outside a building may be used to hold the 
+					rain gutter. The finished surface below the fascia and rafters is called the soffit or eave.
+					In classical architecture, the fascia is the plain, wide band across the bottom of the entablature, 
+					directly above the columns. The "guttae" or drip edge was mounted on the fascia in the Doric order, 
+					below the triglyph.
+				</p>
 			</div>
-			<div class="col-4">
-				<a href="Gallery/Alstonville">
-					<img class="galleryImage" src="Alstonville/img1.jpg">
-				</a>
-				<p>Alstonville Project</p>
-			</div>
-		</div>
-		<div class="galleryDiv row">
-			<div class="col-4">
-				<a href="Gallery/Ascot">
-					<img class="galleryImage" src="Ascot/img1.jpg">
-				</a>
-				<p>Ascot Project</p>
-			</div>
-		</div>
 	</div>
+	
+	
+
 </div>
-</main>
+
 <div class="footer">
 	<div class="container">
 		<div class="row">
@@ -126,9 +139,11 @@
 </div>
 
 
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 
 </body>

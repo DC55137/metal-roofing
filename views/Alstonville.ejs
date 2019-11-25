@@ -5,34 +5,53 @@
 	<script src="https://kit.fontawesome.com/1c59f0b14b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/main.css">
+	<link rel="stylesheet" type="text/css" href="/projects.css">
 	<title>Chris's Gallery Page</title>
 </head>
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-	<div class="container">
-		<a href="/" class="navbar-brand"><img src="/logo.png" id="/logo"></a>
-		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarmenu">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a href="/" class="nav-link">Home</a>
-				</li>
-				<li class="nav-item">
-					<a href="Gallery" class="nav-link active">Gallery</a>
-				</li>
-				<li class="nav-item">
-					<a href="About" class="nav-link">About</a>
-				</li>
-				<li class="nav-item">
-					<p class="nav-link" id="number">(07) 553555555</p>
-				</li>
-			</ul>
+		<div class="container">
+			<a href="/" class="navbar-brand"><img src="/logo.png" id="logo"></a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarmenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="/" class="nav-link">Home</a>
+					</li>
+					
+					<li class="nav-item active">
+						<a href="/Gallery" class="nav-link">Gallery</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="/Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Services
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+						</li>
+					<li class="nav-item">
+						<a href="/About" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="/quote" class="nav-link ">Get a Quote</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.facebook.com/christopher.board.37" class="nav-link"><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li class="nav-item">
+						<p class="nav-link" id="number"><i class="fas fa-phone-alt"></i>0401 742 278</p>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</nav>
-<div class="ultimateSouthport">
+	</nav>
+<main>
 	<div class="container">
 			<div class="row">
 				<div class="col-3">
@@ -57,7 +76,7 @@
 				</div>
 			</div>
 	</div>
-</div>
+</main>
 
 <div class="footer">
 	<div class="container">

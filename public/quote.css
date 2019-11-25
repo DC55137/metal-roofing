@@ -1,0 +1,53 @@
+main{
+	padding: 50px;
+	margin-top: 95px;
+	background-color: #01539a;
+	color: white;
+	font-size: 1em;
+}
+
+#facebook{
+	color: white;
+	font-size: 5em;
+}
+
+h1{
+	text-align: center;
+}
+.form-box {
+	display: flex;
+	padding: 20px;
+	align-content: center;
+	width: 50%;
+	border: black solid 3px;
+	padding: 30px auto;
+	}
+
+
+form button{
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid white;
+	background: white; 
+	font-size: 16px;
+	font-weight: 400;
+	color: #01539a;
+	}
+
+button:hover {
+	background: #d0dfe8;
+	} 
+
+form input,
+form textarea {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background: #d0dfe8;
+	}
