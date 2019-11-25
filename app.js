@@ -17,10 +17,6 @@ app.use(express.static("public"));
 
 app.set('view engine', 'ejs');
 
-app.get("/quote", (req, res)=>{
-	res.render("quote")
-})
-
 app.post("/createQuote", urlencodedParser, (req, res)=>{
 	console.log(req.body);
 	const body = req.body;
@@ -33,7 +29,7 @@ app.post("/createQuote", urlencodedParser, (req, res)=>{
 	// 	html: body2
 	// })
 	console.log(body2);
-	res.render("home");
+	res.render("Home");
 })
 
 app.get("/", function(req,res){
