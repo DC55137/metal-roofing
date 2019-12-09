@@ -22,12 +22,12 @@ app.post("/createQuote", urlencodedParser, (req, res)=>{
 	const body = req.body;
 	console.log(body)
 	const body2 = "<h1>"+ body["First Name"]+" "+ body["Last Name"]+"</h1><br><h2> Email: "+ body["Email"]+" Number: "+ body["Number-quote"]+"</h2><br><p>"+ " "+body["Message"] +"</p><br><br><h4> Email send through Website </h4>";
-	// transporter.sendMail({
-	// 	to: "daniel.correa55137@gmail.com",
-	// 	from: "cbroofing@hotmail.com",
-	// 	subject: "quote recieved",
-	// 	html: body2
-	// })
+	transporter.sendMail({
+		to: "daniel.correa55137@gmail.com",
+		from: "cbroofing@hotmail.com",
+		subject: "quote recieved",
+		html: body2
+	})
 	console.log(body2);
 	res.render("Home");
 })
