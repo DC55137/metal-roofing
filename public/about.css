@@ -16,3 +16,19 @@
 	overflow: hidden;
 	object-fit: cover;
 }
+
+.aboutBlur p{
+	margin-right: 5%;
+	font-size: 1.2em;
+}
+
+.aboutBlur h1{
+	font-size: 3em;
+	margin-top: 5%;
+}
+
+.aboutBlur h3{
+	font-size: 3em;
+	margin-top: 5%;
+	text-align: center;
+}

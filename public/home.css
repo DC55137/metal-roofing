@@ -18,7 +18,6 @@ main{
 .middle h4{
 	font-size: 1.19vw;
 	display: block;
-	
 }
 
 .middle .empty{
@@ -134,11 +133,33 @@ main{
     margin: 0 auto;
 }
 
+.statement{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.strip h1 i{
+	margin: 20% 0;
+	font-size: 6em;
+}
+
 #logo-home{
 	height: 33%;
 	position: absolute;
 	right: 33%;
 	z-index: 998;
+}
+
+.suppliers{
+	margin: 100px 0;
+}
+
+.suppliers-header{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.suppliers img{
+	width: 70%
 }
 
 .buttons{
