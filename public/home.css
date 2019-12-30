@@ -140,6 +140,7 @@ main{
 .strip h1 i{
 	margin: 20% 0;
 	font-size: 6em;
+	opacity: 1;
 }
 
 #logo-home{
