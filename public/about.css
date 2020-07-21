@@ -1,24 +1,29 @@
 .ultimateAbout{
 	background-color: #01539a;
     color: white;
-    margin-top: 95px;
+    margin-top: 100px;
 	background-color: #01539a;
 	color: white;
-}
-
-.row-about{
-	height: calc(100vh- 10px);;
+	height: calc(100vh- 80px);
 }
 
 .aboutImg{
-	height: 100vh;
+	height: inherit;
 	background-image: url("carousel7.jpg");
+	background-repeat: no-repeat;
 	overflow: hidden;
-	object-fit: cover;
+	object-fit: fill;
+}
+
+.aboutBlur{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-left: 10%;
 }
 
 .aboutBlur p{
 	margin-right: 5%;
+	margin-top: 5%;
 	font-size: 1.2em;
 }
 
@@ -27,6 +32,11 @@
 	margin-top: 5%;
 }
 
+.aboutPageBlur{
+	margin-top: 20%;
+	margin-bottom: 20%;
+	padding-left: 10%;
+}
 .aboutBlur h3{
 	font-size: 3em;
 	margin-top: 5%;

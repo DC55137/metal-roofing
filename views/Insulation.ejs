@@ -1,139 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-<!-- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-	<script src="https://kit.fontawesome.com/1c59f0b14b.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="about.css">
-	<title>Chris's About Page</title>
-</head>
-<body>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-					<a href="/" class="navbar-brand"><img src="logo.png" id="logo"></a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarmenu">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a href="/" class="nav-link">Home</a>
-							</li>
-							
-							<li class="nav-item">
-								<a href="Gallery" class="nav-link">Gallery</a>
-							</li>
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Services
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>
-								</li>
-							<li class="nav-item">
-								<a href="About" class="nav-link">About</a>
-							</li>
-							<li class="nav-item">
-								<a href="/quote" class="nav-link ">Get a Quote</a>
-							</li>
-							<li class="nav-item">
-								<a href="https://www.facebook.com/christopher.board.37" class="nav-link"><i class="fab fa-facebook-square"></i></a>
-							</li>
-							<li class="nav-item">
-								<p class="nav-link" id="number"><i class="fas fa-phone-alt"></i>0401 742 278</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-
+<% include partials/header %>
 <div class="ultimateAbout">
 		<div class="row row-about">
+				<div class="col-6 aboutBlur">
+					<div class="container">
+						<h1>Instulation</h1>
+						<p>
+							<strong>Instulation</strong> 
+								to the use of appropriate insulation materials and design adaptations for buildings
+							to slow the transfer of heat through the enclosure to reduce heat loss and gain. The transfer
+							of heat is caused by the temperature difference between indoors and outdoors. 
+							The way heat is transferred includes heat conduction, heat convection, and heat radiation. 
+							The rate of transmission is also closely related to the propagating medium, Heat flow by 
+							transmission occurs by a combination of conduction, convection, and radiation. 
+							Heat is lost or gained by transmission through the ceilings walls, floors, windows, and doors. 
+							This heat reduction and acquisition are usually unwelcome. It not only increases the load on the 
+							HVAC system resulting in more energy wastes but also reduces the thermal comfort of people in the 
+							building. Thermal insulation in buildings is an important factor in achieving thermal comfort for 
+							its occupants. Insulation reduces unwanted heat loss or gain and can decrease the energy demands of 
+							heating and cooling systems. It does not necessarily deal with issues of adequate ventilation and may 
+							or may not affect the level of sound insulation. In a narrow sense insulation can just refer to the 
+							insulation materials employed to slow heat loss, such as: cellulose, glass wool, rock wool, polystyrene, 
+							urethane foam, vermiculite, perlite, wood fiber, plant fiber (cannabis, flax, cotton, cork, etc.), 
+							recycled cotton denim, plant straw, animal fiber (sheep's wool), cement, and earth or soil, reflective 
+							insulation (also known as radiant barrier) but it can also involve a range of designs and techniques to 
+							address the main modes of heat transfer - conduction, radiation, and convection materials.
+						</p>
+
+					</div>
+					
+				</div>
 			<div class="col-6 aboutImg">
 			</div>
-			<div class="col-6 aboutBlur">
-				<h1>Instulation</h1>
-				<p>
-					<strong>Instulation</strong> 
-					 to the use of appropriate insulation materials and design adaptations for buildings
-					to slow the transfer of heat through the enclosure to reduce heat loss and gain. The transfer
-					of heat is caused by the temperature difference between indoors and outdoors. 
-					The way heat is transferred includes heat conduction, heat convection, and heat radiation. 
-					The rate of transmission is also closely related to the propagating medium, Heat flow by 
-					transmission occurs by a combination of conduction, convection, and radiation. 
-					Heat is lost or gained by transmission through the ceilings walls, floors, windows, and doors. 
-					This heat reduction and acquisition are usually unwelcome. It not only increases the load on the 
-					HVAC system resulting in more energy wastes but also reduces the thermal comfort of people in the 
-					building. Thermal insulation in buildings is an important factor in achieving thermal comfort for 
-					its occupants. Insulation reduces unwanted heat loss or gain and can decrease the energy demands of 
-					heating and cooling systems. It does not necessarily deal with issues of adequate ventilation and may 
-					or may not affect the level of sound insulation. In a narrow sense insulation can just refer to the 
-					insulation materials employed to slow heat loss, such as: cellulose, glass wool, rock wool, polystyrene, 
-					urethane foam, vermiculite, perlite, wood fiber, plant fiber (cannabis, flax, cotton, cork, etc.), 
-					recycled cotton denim, plant straw, animal fiber (sheep's wool), cement, and earth or soil, reflective 
-					insulation (also known as radiant barrier) but it can also involve a range of designs and techniques to 
-					address the main modes of heat transfer - conduction, radiation, and convection materials.
-				</p>
-			</div>
 	</div>
 	
 	
 
 </div>
-
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-3" id="displayDiv">
-				<img src="logo.png" id="display">
-			</div>
-			<div class="col-3">
-				<p>
-					<br>
-					<br>
-					Gold Coast <br>
-					Brisbane <br>
-					Sunshine Coast <br>
-				</p>
-			</div>
-			<div class="col-3">
-				<p>
-					<br>
-					<br>
-					Head Office <br>
-					23/122 The boulevard <br>
-					Southport Gold Coast
-				</p>
-			</div>
-			<div class="col-3">
-				<p>
-					<br>
-					<br>
-					<strong>Email:</strong> chrisboar@jdbdjc.com <br>
-					<strong>Phone:</strong> 5555 5555 5555
-				</p>
-			</div>
-		</div>
-			<hr>
-			<p class="footerP">
-				© 2019 CBMR. Powered by Think DC. All Rights Reserved. Terms & Conditions
-			</p>
-		</div>
-	</div>
-</div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
-</body>
-</html>
+<% include partials/footer %>

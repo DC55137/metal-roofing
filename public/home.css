@@ -1,12 +1,12 @@
 main{
-	margin-top: 95px;
+	margin-top: 100px;
 	background-color: white;
 }
 .middle{
 	position: absolute;
 	top: 770px;
 	right: 5%;
-	margin-top: -80px;
+	margin-top: -75px;
 	text-align: center;
 	text-transform: uppercase;
 	background: white;
@@ -15,8 +15,15 @@ main{
 	width: 90%;
 	color: #01539a;
 }
+
+@media (max-width:992px) {
+	.middle{
+	  display: none;
+	}
+  }
+
 .middle h4{
-	font-size: 1.19vw;
+	font-size: 0.8vw;
 	display: block;
 }
 
@@ -56,17 +63,6 @@ main{
 	right: 15px;
 	z-index: 999;
 	margin: -20px 0;
-}
-.icon{
-	border: #01539a solid 3px;
-	border-radius: 50%;
-	font-size: 1em;
-	padding: 2px;
-}
-
-.icon:hover{
-	background-color: #01539a;
-	color: white;
 }
 
 .aboutBlur{
@@ -176,7 +172,7 @@ main{
 }
 
 #quote{
-	font-size: 3.5em;
+	font-size: 3.5vw;
 	color: black;
 }
 
@@ -190,7 +186,7 @@ main{
 	top: 200px;
 	left: 0px;
 	width: 35%;
-	height: 35%;
+	padding-bottom: 10%;
 	box-shadow: 0px 20px #01539a;
 	text-transform: uppercase;
 	opacity: 0.9;
@@ -216,6 +212,10 @@ main{
 	margin-top: 5%;
 }
 
+.strip:hover .stripFront{
+	transition: 1s;
+    left: 0;
+}
 .stripFront{
 	background-color: #01539a;
 	width: 100%;
@@ -233,3 +233,9 @@ main{
     height: 2px;
     background: #01539a;
 }
+
+.suppliers{
+	margin: 5% auto;
+	text-align: center;
+}
+

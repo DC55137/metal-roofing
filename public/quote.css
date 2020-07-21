@@ -1,6 +1,6 @@
-main{
+.quote{
 	padding: 50px;
-	margin-top: 95px;
+	margin-top: 100px;
 	background-color: #01539a;
 	color: white;
 	font-size: 1em;
@@ -9,6 +9,14 @@ main{
 #facebook{
 	color: white;
 	font-size: 5em;
+}
+
+#quoteLogo{
+	filter: invert(1) grayscale(1);
+	height: 3em;
+	margin-bottom: 10%;
+	margin-left: 10%;
+
 }
 
 h1{

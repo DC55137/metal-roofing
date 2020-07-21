@@ -1,62 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<!-- 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-	<script src="https://kit.fontawesome.com/1c59f0b14b.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
-	<title>Chris's Home Page</title>
-</head>
-<body>
-	<main>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-					<a href="/" class="navbar-brand"><img src="logo.png" id="logo"></a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarmenu">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a href="/" class="nav-link active">Home</a>
-							</li>
-							
-							<li class="nav-item">
-								<a href="Gallery" class="nav-link">Gallery</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Services
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Something else here</a>
-								</div>
-								</li>
-							<li class="nav-item">
-								<a href="About" class="nav-link">About</a>
-							</li>
-							<li class="nav-item">
-								<a href="/quote" class="nav-link ">Get a Quote</a>
-							</li>
-							<li class="nav-item">
-								<a href="https://www.facebook.com/christopher.board.37" class="nav-link"><i class="fab fa-facebook-square"></i></a>
-							</li>
-							<li class="nav-item">
-								<p class="nav-link" id="number"><i class="fas fa-phone-alt"></i>0401 742 278</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<div class="ultimate">
-				<div class="Satisfaction">
-					<img class="Satisfaction" src="satisfaction.png">
-				</div>
-				<div>
+<% include partials/header %>
+		<div class="ultimate">
+			<div class="Satisfaction">
+				<img class="Satisfaction" src="satisfaction.png">
+			</div>
+			<div>
 				<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel"
 				data-interval="4000" data-pause="false">
 					<div class="carousel-inner">
@@ -88,57 +35,57 @@
 			<br>
 				<div class="middle">
 					<div class="row align-items-center">
-						<div class="col-1 belowCarousel empty">
+						<div class="col-lg-1 belowCarousel empty">
 						</div>	
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="/Gutter">
 								<h4>Gutters and Fascia</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="/DownPipes">
 								<h4>Down Pipes</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="/SkyLights">
 								<h4>Sky Lights</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="WhirlyBirds">
 								<h4>Whirly Birds</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="Insulation">
 								<h4>Insulations </h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="RoofAnchors">
 								<h4>Roof </h4>
 								<h4>Anchors</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="RoofWalkways">
 								<h4>Roof</h4>
 								<h4>Walkways</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="EdgeProtection">
 								<h4>Edge</h4>
 								<h4>Protection</h4>
 							</a>
 						</div>		
-						<div class="col-1 belowCarousel">
+						<div class="col-lg-1 belowCarousel">
 							<a class="btn belowCarouselButton" href="AsbestosRemoval">
 								<h4>Asbestos Removal</h4>
 							</a>
 						</div>	
-						<div class="col-1 belowCarousel empty">
+						<div class="col-lg-1 belowCarousel empty">
 						</div>	
 					</div>
 				</div>
@@ -179,16 +126,16 @@
 						<h1>Our Suppliers</h1>
 					</div>
 					<div class="row">
-						<div class="col-3">
+						<div class="suppliers col-lg-3 col-sm-6">
 							<img src="bluescope.png" alt="">
 						</div>
-						<div class="col-3">
+						<div class="suppliers col-lg-3 col-sm-6">
 							<img src="colorbond.jpg" alt="">
 						</div>
-						<div class="col-3">
+						<div class="suppliers col-lg-3 col-sm-6">
 							<img src="steeline.jpg" alt="">
 						</div>
-						<div class="col-3">
+						<div class="suppliers col-lg-3 col-sm-6">
 							<img src="unicote.png" alt="">
 						</div>
 					</div>
@@ -212,58 +159,6 @@
 					</div>
 				</div>
 			</div>
-			
-			<div class="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-3" id="displayDiv">
-							<img src="logo.png" id="display">
-						</div>
-						<div class="col-3">
-							<p>
-								<br>
-								<br>
-								Gold Coast <br>
-								Brisbane <br>
-								Sunshine Coast <br>
-							</p>
-						</div>
-						<div class="col-3">
-							<p>
-								<br>
-								<br>
-								Head Office <br>
-								23/122 The boulevard <br>
-								Southport Gold Coast
-							</p>
-						</div>
-						<div class="col-3">
-							<p>
-								<br>
-								<br>
-								<strong>Email:</strong> cbroofing@hotmail.com <br>
-								<strong>Phone:</strong>  0401 742 278
-							</p>
-						</div>
-					</div>
-						<hr>
-						<p class="footerP">
-							© 2019 CBMR. Powered by Think DC. All Rights Reserved. Terms & Conditions
-						</p>
-					</div>
-				</div>
-			</div>
-	</main>
+</main>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-		jQuery('.carousel').carousel({
-		interval: 7000
-	})
-</script>
-
-</body>
-</html>
+<% include partials/footer %>
