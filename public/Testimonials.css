@@ -1,0 +1,25 @@
+.ultimateTestimonial{
+	background-color: #01539a;
+    color: white;
+    margin-top: 100px;
+	background-color: #01539a;
+	color: white;
+	height: calc(100vh- 80px);
+	padding-top: 2em;
+}
+
+.testimonialHeader p{
+	margin: 20px 0;
+}
+
+.testimonial{
+	margin-top: 50px;
+}
+
+.testimonial h3{
+	text-align: right;
+}
+
+.testimonial p{
+	font-size: 1.3em;
+}

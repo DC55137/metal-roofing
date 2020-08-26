@@ -12,6 +12,8 @@ const transporter = nodemailer.createTransport({
 })
 const app = express();
 
+// const Testimonials = 
+
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.use(express.static("public"));
@@ -133,6 +135,12 @@ app.get("/Gallery/Alstonville", function(req,res){
 app.get("/Gallery/Ascot", function(req,res){
 	res.render("Ascot", {
 		title: "Project"
+	});
+})
+
+app.get("/Testimonials", function(req, res){
+	res.render("Testimonials",{
+		title: "Testimonials"
 	});
 })
 
