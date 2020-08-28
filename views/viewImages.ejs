@@ -1,0 +1,24 @@
+<% include partials/header %> 
+<div class="ultimateView">
+	<div class="container">
+		<br>
+		<h1><%= name %> </h1>
+		<h4><%= date %> </h4>
+		<hr>
+		<p><%= information %> </p>
+		<br>
+		<div class="row">
+			<% images.forEach(function(image){ %>
+				<div class="col-lg-6 nopadding">
+					<img class="galleryImage" src="<%= image %> " alt="<%= image %> ">
+				</div>
+			<% }) %> 
+		</div>
+	</div>
+</div>
+
+</div>
+	
+</main>
+
+<% include partials/footer %> 

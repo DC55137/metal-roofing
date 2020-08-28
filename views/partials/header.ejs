@@ -10,14 +10,13 @@
     <% } %>
     <% if(title === "Gallery"){ %>
         <link rel="stylesheet" type="text/css" href="gallery.css">
-		<link rel="stylesheet" type="text/css" href="about.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
     <% } %>
-    <% if(title === "Project"){ %>
-		<link rel="stylesheet" type="text/css" href="/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="/main.css">
+	<% if(title === "Project"){ %>
 		<link rel="stylesheet" type="text/css" href="/projects.css">
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.css">
     <% } %>
     <% if(title === "about"){ %>
 		<link rel="stylesheet" type="text/css" href="about.css">
@@ -30,7 +29,7 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
     <% } %>
     <% if(title === "services"){ %>
-		<link rel="stylesheet" type="text/css" href="about.css">
+		<link rel="stylesheet" type="text/css" href="services.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
     <% } %>
@@ -58,12 +57,11 @@
 							<li class="nav-item">
 								<a href="/" class="nav-link <% if(title === 'Home') { %> active <% } %> ">Home</a>
 							</li>
-							
 							<li class="nav-item">
-								<a href="Gallery" class="nav-link <% if(title === "Gallery" || title === "Project"){ %> active <% } %> ">Gallery</a>
+								<a href="/Gallery" class="nav-link <% if(title === "Gallery" || title === "Project"){ %> active <% } %> ">Gallery</a>
 							</li>
 							<li class="nav-item dropdown <% if(title ==="services"){ %> active <% } %>">
-								<a class="nav-link dropdown-toggle " href="Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link dropdown-toggle " href="/Services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Services
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,7 +69,7 @@
 									<a class="dropdown-item" href="/DownPipes">Down pipes</a>
 									<a class="dropdown-item" href="/SkyLights">Sky Lights</a>
 									<a class="dropdown-item" href="/WhirlyBirds">Whirly Birds</a>
-									<a class="dropdown-item" href="/Insulations">Insulations</a>
+									<a class="dropdown-item" href="/Insulation">Insulation</a>
 									<a class="dropdown-item" href="/RoofAnchors">Roof Anchors</a>
 									<a class="dropdown-item" href="/RoofWalkways">Roof Walkways</a>
 									<a class="dropdown-item" href="/EdgeProtection">Edge Protection</a>
@@ -79,13 +77,13 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a href="Testimonials" class="nav-link <% if(title === "Testimonials"){ %> active <% } %> ">Testimonials</a>
+								<a href="/Testimonials" class="nav-link <% if(title === "Testimonials"){ %> active <% } %> ">Testimonials</a>
 							</li>
 							<li class="nav-item">
 								<a href="/quote" class="nav-link <% if(title === "Quote"){ %> active <% } %>">Get a Quote</a>
 							</li>
 							<li class="nav-item">
-								<a href="About" class="nav-link <% if(title === "about"){ %> active <% } %> ">About</a>
+								<a href="/About" class="nav-link <% if(title === "about"){ %> active <% } %> ">About</a>
 							</li>
 							<li class="nav-item">
 								<a href="https://www.facebook.com/christopher.board.37" class="nav-link"><i class="fab fa-facebook-square"></i></a>

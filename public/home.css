@@ -16,12 +16,6 @@ main{
 	color: #01539a;
 }
 
-@media (max-width:992px) {
-	.middle{
-	  display: none;
-	}
-  }
-
 .middle h4{
 	font-size: 0.8vw;
 	display: block;
@@ -59,7 +53,7 @@ main{
 .Satisfaction{
 	position: absolute;
 	top:60px;
-	width: 45%;
+	width: 300px;
 	right: 15px;
 	z-index: 999;
 	margin: -20px 0;
@@ -69,7 +63,22 @@ main{
 	padding-top: 10%;
 }
  .strip p{
- 	font-size: 1.2em;
+	 font-size: 1.3em;
+	 text-align: center;
+ }
+
+ .strip a{
+	 color: white;
+ }
+ 
+ .strip a:hover{
+	 color: black;
+ }
+
+ .strip li{
+	 font-size: 1.3em;
+	 text-align: center;
+	 list-style: none;
  }
 
 
@@ -172,7 +181,7 @@ main{
 }
 
 #quote{
-	font-size: 3.5vw;
+	font-size: 2em;
 	color: black;
 }
 
@@ -185,14 +194,18 @@ main{
 	background: white;
 	top: 200px;
 	left: 0px;
-	width: 35%;
-	padding-bottom: 10%;
+	width: 400px;
+	padding-bottom: 200px;
 	box-shadow: 0px 20px #01539a;
 	text-transform: uppercase;
 	opacity: 0.9;
 	padding-left: 50px;
-
 }
+
+.quote a{
+	font-size: 2vw;
+}
+
 .logo-home-div{
 	text-align: center;
 	margin: -100px auto 0 auto;
@@ -237,5 +250,63 @@ main{
 .suppliers{
 	margin: 5% auto;
 	text-align: center;
+}
+
+.testimonial{
+	margin-top: 50px;
+}
+
+.testimonial h3{
+	text-align: right;
+}
+
+.testimonial p{
+	font-size: 1.3em;
+	/* border: 2px black solid; */
+	padding: 10px;
+	/* box-shadow: 0px 20px pink; */
+	background: white;
+	color: #01539a;
+	border-radius: 25px;
+}
+
+.suppliers p{
+	font-size: 1.3em;
+}
+
+.suppliers a{
+	font-size: 3vw;
+}
+
+
+@media (max-width:992px) {
+	.middle{
+	  display: none;
+	}
+	.quote{
+		text-align: left;
+		position: absolute;
+		background: white;
+		top: 200px;
+		left: 0px;
+		width: 35%;
+		padding-bottom: 10%;
+		box-shadow: 0px 20px #01539a;
+		text-transform: uppercase;
+		opacity: 0.9;
+		padding-left: 50px;
+	}
+	#quote{
+		font-size: 3.5vw;
+		color: black;
+	}
+	.Satisfaction{
+		position: absolute;
+		top:60px;
+		width: 45%;
+		right: 15px;
+		z-index: 999;
+		margin: -20px 0;
+	}
 }
 

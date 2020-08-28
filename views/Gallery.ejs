@@ -1,33 +1,27 @@
 <% include partials/header %> 
 <main>
 	<div class="container">
+		<br>
+		<h1>Gallery</h1>
+		<hr>
+		<br>
+		<p>
+			At Chris Board Metal Roofing (CBMR), we believe our work speaks
+			for its. Over the years we have created a beutiful portfolio of 
+			our accomplishments which we are happy to share wih you here.
+		</p>
 		<div class="galleryDiv row">
-			<div class="col-lg-4">
-				<a href="Gallery/Southport">
-					<img class="galleryImage" src="Southport/img10.jpg">
+		<% imageGallery.forEach(function(img){ %>
+			<div class="col-lg-4">	
+				<a href="Gallery/<%= img.name %> ">
+					<img class="galleryImage" src="<%= img.images[0] %>">
 				</a>
-				<p>Southport Project</p>
+				<p><%= img.name %>  Project
+				<br>
+				<%= img.date %>
+				</p>
 			</div>
-			<div class="col-lg-4">
-				<a href="Gallery/Coombabah">
-					<img class="galleryImage" src="Coombabah/img1.jpg">
-				</a>
-				<p>Coombabah Project</p>
-			</div>
-			<div class="col-lg-4">
-				<a href="Gallery/Alstonville">
-					<img class="galleryImage" src="Alstonville/img1.jpg">
-				</a>
-				<p>Alstonville Project</p>
-			</div>
-		</div>
-		<div class="galleryDiv row">
-			<div class="col-lg-4">
-				<a href="Gallery/Ascot">
-					<img class="galleryImage" src="Ascot/img1.jpg">
-				</a>
-				<p>Ascot Project</p>
-			</div>
+		<% }) %> 
 		</div>
 	</div>
 </div>

@@ -15,10 +15,61 @@ const app = express();
 // const Testimonials = 
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
 app.use(express.static("public"));
-
 app.set('view engine', 'ejs');
+
+// Images for Gallery
+
+var imageGallery = [
+	{
+		name: "Mt Tamborine",
+		date: "13/08/20", 
+		information: "Beautiful view up here in Mount Tamborine. We installed 175mm quad on spikes", 
+		images: ["/Mt Tamborine/img1.jpg"]
+	},
+	{
+		name: "Slacks Creek",
+		date: "29/05/20", 
+		information: "This was good and stuff", 
+		images: ["/Slacks Creek/img1.jpg","/Slacks Creek/img2.jpg","/Slacks Creek/img3.jpg","/Slacks Creek/img4.jpg","/Slacks Creek/img5.jpg"]
+	},
+	{
+		name: "Paddington",
+		date: "27/03/20", 
+		information: "This was good and stuff", 
+		images: ["/Paddington/img1.jpg","/Paddington/img2.jpg","/Paddington/img3.jpg","/Paddington/img4.jpg","/Paddington/img5.jpg"]
+	},
+	{
+		name: "Southport",
+		date: "01/03/20", 
+		information: "This job was a little more intricated with the unusual profile, and airconditioning unit created a bit of a challenge", 
+		images: ["/Southport Office/img1.jpg","/Southport Office/img2.jpg","/Southport Office/img3.jpg","/Southport Office/img4.jpg","/Southport Office/img5.jpg","/Southport Office/img6.jpg","/Southport Office/img7.jpg","/Southport Office/img8.jpg","/Southport Office/img9.jpg","/Southport Office/img10.jpg"]
+	},
+	{
+		name: "Ascot",
+		date: "31/02/20",
+		information: "This was a good job and stuff", 
+		images: ["/Ascot/img1.jpg", "/Ascot/img2.jpg", "/Ascot/img3.jpg", "/Ascot/img4.jpg", "/Ascot/img5.jpg", "/Ascot/img6.jpg"]
+	},
+	{
+		name: "Alstonville",
+		date: "31/02/20", 
+		information: "This was a good job and stuff", 
+		images: ["/Alstonville/img1.jpg", "/Alstonville/img2.jpg", "/Alstonville/img3.jpg", "/Alstonville/img4.jpg", "/Alstonville/img5.jpg", "/Alstonville/img6.jpg"]
+	},
+	{
+		name: "Coombabah",
+		date: "31/02/20", 
+		information: "This was a good job and stuff", 
+		images: ["/Coombabah/img1.jpg", "/Coombabah/img2.jpg", "/Coombabah/img3.jpg", "/Coombabah/img4.jpg", "/Coombabah/img5.jpg", "/Coombabah/img6.jpg"]
+	},
+	{
+		name: "Southport",
+		date: "31/02/20", 
+		information: "This was a good job and stuff", 
+		images: ["/Southport/img1.jpg", "/Southport/img2.jpg", "/Southport/img3.jpg", "/Southport/img4.jpg", "/Southport/img5.jpg", "/Southport/img6.jpg"]
+	}
+];
 
 app.post("/createQuote", urlencodedParser, (req, res)=>{
 	console.log(req.body);
@@ -111,32 +162,50 @@ app.get("/AsbestosRemoval", function(req,res){
 
 app.get("/Gallery", function(req,res){
 	res.render("Gallery", {
+		imageGallery: imageGallery,
 		title: "Gallery"
 	});
 })
 
-app.get("/Gallery/Southport", function(req,res){
-	res.render("Southport", {
-		title: "Project"
-	});
+app.get("/Gallery/:id", function(req, res){
+	var projectName = req.params.id;
+	imageGallery.forEach(function(data){
+		if(data.name === projectName){
+			res.render("viewImages",
+				{
+					images: data.images,
+					name: data.name, 
+					date: data.date,
+					information: data.information,
+					title: "Project"
+				})
+			}
+		})
+	// res.redirect("/")
 })
 
-app.get("/Gallery/Coombabah", function(req,res){
-	res.render("Coombabah", {
-		title: "Project"
-	});
-})
+// app.get("/Gallery/Southport", function(req,res){
+// 	res.render("Southport", {
+// 		title: "Project"
+// 	});
+// })
 
-app.get("/Gallery/Alstonville", function(req,res){
-	res.render("Alstonville", {
-		title: "Project"
-	});
-})
-app.get("/Gallery/Ascot", function(req,res){
-	res.render("Ascot", {
-		title: "Project"
-	});
-})
+// app.get("/Gallery/Coombabah", function(req,res){
+// 	res.render("Coombabah", {
+// 		title: "Project"
+// 	});
+// })
+
+// app.get("/Gallery/Alstonville", function(req,res){
+// 	res.render("Alstonville", {
+// 		title: "Project"
+// 	});
+// })
+// app.get("/Gallery/Ascot", function(req,res){
+// 	res.render("Ascot", {
+// 		title: "Project"
+// 	});
+// })
 
 app.get("/Testimonials", function(req, res){
 	res.render("Testimonials",{
