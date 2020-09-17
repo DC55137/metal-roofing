@@ -11,6 +11,23 @@ body{
 	overflow: auto;
 }
 /* Navbar items */
+
+
+
+@media (max-width:991.98px){
+	.navbar-collapse{
+		position: absolute;
+		top: 25px;
+		right: 40%;
+		width: 100vw;
+	}
+	.navbar-nav{
+		width: 50%;
+	}
+} 
+
+
+
 #number{
 	font-weight: 700;
 	color: #01539a;
@@ -19,6 +36,7 @@ body{
 #logo{
 	width: 140px;
 }
+
 
 #footerLogo{
 	margin: 40px auto;
@@ -65,12 +83,14 @@ h3{
 	text-transform: Uppercase;
 }
 
+
 .navbar a,
 .navbar p
 	{
 	/* Never get larger than this */
 	font-size: 1em;
 }
+
 
 
 /* @media (min-width:993px){
