@@ -7,10 +7,14 @@
 	height: calc(100vh- 80px);
 }
 
+.aboutImg{
+	overflow: hidden;
+}
+
+
 .aboutImg img{
 	height: 100vh;
-	overflow: hidden;
-	object-fit: fill;
+	object-fit: contain;
 }
 
 .aboutContent{

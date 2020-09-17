@@ -223,12 +223,10 @@ main{
 	background-image: url("roof1.jpg");
 	background-size: cover;
 	margin-top: 5%;
+	background-attachment: fixed;
 }
 
-.strip:hover .stripFront{
-	transition: 1s;
-    left: 0;
-}
+
 .stripFront{
 	background-color: #01539a;
 	width: 100%;
@@ -238,7 +236,6 @@ main{
 
 .strip-container{
 	padding: 30px;
-
 }
 
 .style-one {

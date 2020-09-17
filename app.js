@@ -22,9 +22,9 @@ app.set('view engine', 'ejs');
 
 var imageGallery = [
 	{
-		name: "Mt Tamborine",
+		name: "Tallegalla",
 		date: "13/08/20", 
-		information: "Beautiful view up here in Mount Tamborine. We installed 175mm quad on spikes", 
+		information: "Beautiful view up here in Tallegalla. We installed new roof and 175mm quad on spikes", 
 		images: ["/Mt Tamborine/img1.jpg"]
 	},
 	{
@@ -75,7 +75,7 @@ app.post("/createQuote", urlencodedParser, (req, res)=>{
 	console.log(req.body);
 	const body = req.body;
 	console.log(body)
-	const body2 = "<h1>"+ body["First Name"]+" "+ body["Last Name"]+"</h1><br><h2> Email: "+ body["Email"]+" Number: "+ body["Number-quote"]+"</h2><br><p>"+ " "+body["Message"] +"</p><br><br><h4> Email sent through Website </h4>";
+	const body2 = "<h1>"+ body["First Name"]+" "+ body["Last Name"]+"</h1><br><h2> Email: "+ body["Email"]+" Number: "+ body["Number-quote"]+"</h2><br><p>"+ " "+body["Message"] +"</p><br><h4>" +  body["Address"]+ "</h4><br><br><h4> Email sent through Website </h4>";
 	transporter.sendMail({
 		to: "daniel.correa55137@gmail.com",
 		from: "daniel.cbroofing@gmail.com",

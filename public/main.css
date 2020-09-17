@@ -65,23 +65,22 @@ h3{
 	text-transform: Uppercase;
 }
 
-@media (max-width:992px) {
-	.navbar a,
-	.navbar p
-	 {
-	  /* Never get larger than this */
-	  font-size: 3em;
-	}
-  }
+.navbar a,
+.navbar p
+	{
+	/* Never get larger than this */
+	font-size: 1em;
+}
 
-@media (min-width:993px){
+
+/* @media (min-width:993px){
 	.navbar a{
 		font-size: 1.1em;
 	}
 	.navbar p{
 		font-size: 1.1em;
 	}
-} 
+}  */
 
 nav a,
 nav p	
