@@ -1,4 +1,5 @@
-const express = require("express");
+const express = require("express"),
+env = process.env.NODE_ENV || 'development';
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
@@ -11,7 +12,6 @@ const transporter = nodemailer.createTransport({
 	}
 })
 const app = express();
-
 // const Testimonials = 
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -223,6 +223,21 @@ app.get("*", function(req,res){
 		title: "Home"
 	});
 })
+
+var forceSsl = function (req, res, next) {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+        return res.redirect(['https://', req.get('Host'), req.url].join(''));
+    }
+    return next();
+ };
+
+
+
+ if(process.env.NODE_ENV === 'production') {
+	 app.use(forceSsl);
+	 // additional prod environemtn configuration
+	}
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, function() {
