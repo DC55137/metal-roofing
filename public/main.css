@@ -12,9 +12,15 @@ body{
 }
 /* Navbar items */
 
+.bg-light{
+	background-color: white !important;
+}
 
+.nav-link .active{
+	color: #01539a;
+}
 
-@media (max-width:991.98px){
+/* @media (max-width:991.98px){
 	.navbar-collapse{
 		position: absolute;
 		top: 25px;
@@ -24,9 +30,7 @@ body{
 	.navbar-nav{
 		width: 50%;
 	}
-} 
-
-
+}  */
 
 #number{
 	font-weight: 700;
@@ -75,10 +79,10 @@ h3{
 	font-size: 2.5em;
 }
 
-.navbar{
+/* .navbar{
 	z-index: 9999;
 	height: 100px;
-}
+} */
 .nav-item{
 	text-transform: Uppercase;
 }
@@ -88,19 +92,28 @@ h3{
 .navbar p
 	{
 	/* Never get larger than this */
-	font-size: 1em;
+	font-size: 20px;
+	color: #3b5998;
 }
 
 
 
-/* @media (min-width:993px){
+@media (min-width:993px){
 	.navbar a{
-		font-size: 1.1em;
+		font-size: 13px !important;
 	}
 	.navbar p{
-		font-size: 1.1em;
+		font-size: 13px !important;
 	}
-}  */
+} 
+
+.active{
+	color: #3b5998 !important;;
+}
+
+nav a:hover{
+	color: #3b5998 !important;
+}
 
 nav a,
 nav p	

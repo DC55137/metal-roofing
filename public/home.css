@@ -4,7 +4,7 @@ main{
 }
 .middle{
 	position: absolute;
-	top: 770px;
+	top: 760px;
 	right: 5%;
 	margin-top: -75px;
 	text-align: center;
@@ -52,7 +52,7 @@ main{
 
 .Satisfaction{
 	position: absolute;
-	top:60px;
+	top:30px;
 	width: 300px;
 	right: 15px;
 	z-index: 999;
@@ -181,7 +181,7 @@ main{
 }
 
 #quote{
-	font-size: 2em;
+	font-size: 40px;
 	color: black;
 }
 
@@ -195,15 +195,16 @@ main{
 	top: 200px;
 	left: 0px;
 	width: 400px;
-	padding-bottom: 200px;
+	padding-bottom: 100px;
 	box-shadow: 0px 20px #01539a;
 	text-transform: uppercase;
 	opacity: 0.9;
 	padding-left: 50px;
+	z-index: 999;
 }
 
 .quote a{
-	font-size: 2vw;
+	font-size: 20px;
 }
 
 .logo-home-div{
@@ -293,17 +294,15 @@ main{
 		opacity: 0.9;
 		padding-left: 50px;
 	}
+	.quote a{
+		font-size: 2vw;
+	}
 	#quote{
 		font-size: 3.5vw;
 		color: black;
 	}
 	.Satisfaction{
-		position: absolute;
-		top:60px;
-		width: 45%;
-		right: 15px;
-		z-index: 999;
-		margin: -20px 0;
+		width: 150px;
 	}
 }
 
