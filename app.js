@@ -94,7 +94,7 @@ app.post("/createQuote", urlencodedParser, (req, res)=>{
 	console.log(body)
 	const body2 = "<h1>"+ body["First Name"]+" "+ body["Last Name"]+"</h1><br><h2> Email: "+ body["Email"]+" Number: "+ body["Number-quote"]+"</h2><br><p>"+ " "+body["Message"] +"</p><br><h4>" +  body["Address"]+ "</h4><br><br><h4> Email sent through Website </h4>";
 	transporter.sendMail({
-		to: "daniel.correa55137@gmail.com",
+		to: "cbroofing@gmail.com",
 		from: "daniel.cbroofing@gmail.com",
 		subject: "quote recieved",
 		html: body2
