@@ -62,12 +62,12 @@ body{
 }
 
 h2{
-	font-size: 4.0em;
+	font-size: 20px;
 	text-align: center;
 }
 
 h1 strong{
-	font-size: 1.2em;
+	font-size: 25px;
 }
 
 hr{
@@ -76,7 +76,7 @@ hr{
 }
 
 h3{
-	font-size: 1.5em;
+	font-size: 15px;
 }
 
 /* .navbar{
@@ -104,6 +104,23 @@ h3{
 	}
 	.navbar p{
 		font-size: 13px !important;
+	}
+	h2{
+		font-size: 4.0em;
+		text-align: center;
+	}
+	
+	h1 strong{
+		font-size: 1.2em;
+	}
+	
+	hr{
+		border-top: 3px solid #01539a;
+		opacity: 0.8;
+	}
+	
+	h3{
+		font-size: 1.5em;
 	}
 } 
 

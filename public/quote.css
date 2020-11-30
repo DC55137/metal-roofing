@@ -26,7 +26,6 @@ h1{
 	display: flex;
 	padding: 20px;
 	align-content: center;
-	width: 50%;
 	border: black solid 3px;
 	padding: 30px auto;
 	}
@@ -56,6 +55,27 @@ form textarea {
 	padding: 15px;
 	margin-bottom: 10px;
 	border: none;
-	border-radius: 20px;
+	border-radius: 5px;
 	background: #d0dfe8;
 	}
+
+input,
+textarea
+	{
+	font-size: 15px;
+}
+
+p {
+		font-size: 13px !important;
+	}
+
+
+
+
+
+	@media (min-width:993px){
+		p {
+			font-size: 13px !important;
+		}
+	} 
+	
