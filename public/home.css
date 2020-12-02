@@ -276,6 +276,12 @@ main{
 	font-size: 3vw;
 }
 
+hr{
+	border-top: 3px solid #01539a;
+	opacity: 0.8;
+}
+
+
 
 @media (max-width:992px) {
 	.middle{
